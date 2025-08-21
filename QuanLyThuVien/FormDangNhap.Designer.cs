@@ -181,7 +181,6 @@
         }
 
         #endregion
-        private Krypton.Toolkit.KryptonTextBox txtUsername;
         private Krypton.Toolkit.KryptonTextBox txtPassword;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel1;
@@ -189,5 +188,6 @@
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
+        public Krypton.Toolkit.KryptonTextBox txtUsername;
     }
 }

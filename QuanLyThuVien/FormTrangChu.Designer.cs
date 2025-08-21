@@ -30,26 +30,30 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTrangChu));
             menuStrip1 = new MenuStrip();
-            internalAssemblyDetails1 = new Krypton.Toolkit.InternalAssemblyDetails();
             hệThốngToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
             toolStripMenuItem2 = new ToolStripMenuItem();
             danhMụcToolStripMenuItem = new ToolStripMenuItem();
-            thốngKêToolStripMenuItem = new ToolStripMenuItem();
-            báoCáoToolStripMenuItem = new ToolStripMenuItem();
             quảnLýSáchToolStripMenuItem = new ToolStripMenuItem();
             quảnLýĐộcGiảToolStripMenuItem = new ToolStripMenuItem();
             quảnLýKệSáchToolStripMenuItem = new ToolStripMenuItem();
             quảnLýThủThưToolStripMenuItem = new ToolStripMenuItem();
+            thốngKêToolStripMenuItem = new ToolStripMenuItem();
             thốngKêSốLượngSáchToolStripMenuItem = new ToolStripMenuItem();
             thốngKêSốLượngĐộcGiảToolStripMenuItem = new ToolStripMenuItem();
             thốngKêSốLượngToolStripMenuItem = new ToolStripMenuItem();
             thốngKêTrễHạnToolStripMenuItem = new ToolStripMenuItem();
+            báoCáoToolStripMenuItem = new ToolStripMenuItem();
             báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem = new ToolStripMenuItem();
             sốLượngSáchMượnQuáHạnToolStripMenuItem = new ToolStripMenuItem();
             sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem = new ToolStripMenuItem();
             báoCáoTổngHợpToolStripMenuItem = new ToolStripMenuItem();
+            internalAssemblyDetails1 = new Krypton.Toolkit.InternalAssemblyDetails();
+            StatusStripUser = new Krypton.Toolkit.KryptonStatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             menuStrip1.SuspendLayout();
+            StatusStripUser.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -59,9 +63,130 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { hệThốngToolStripMenuItem, danhMụcToolStripMenuItem, thốngKêToolStripMenuItem, báoCáoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(800, 31);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
+            // 
+            // hệThốngToolStripMenuItem
+            // 
+            hệThốngToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2 });
+            hệThốngToolStripMenuItem.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
+            hệThốngToolStripMenuItem.Size = new Size(120, 27);
+            hệThốngToolStripMenuItem.Text = "🛠️Hệ thống";
+            hệThốngToolStripMenuItem.Click += hệThốngToolStripMenuItem_Click;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Font = new Font("Segoe UI Semilight", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(163, 26);
+            toolStripMenuItem1.Text = "Đăng nhập";
+            // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.Font = new Font("Segoe UI Semilight", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new Size(163, 26);
+            toolStripMenuItem2.Text = "Đăng xuất ";
+            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
+            // 
+            // danhMụcToolStripMenuItem
+            // 
+            danhMụcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýSáchToolStripMenuItem, quảnLýĐộcGiảToolStripMenuItem, quảnLýKệSáchToolStripMenuItem, quảnLýThủThưToolStripMenuItem });
+            danhMụcToolStripMenuItem.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
+            danhMụcToolStripMenuItem.Size = new Size(128, 27);
+            danhMụcToolStripMenuItem.Text = "📑Danh mục";
+            // 
+            // quảnLýSáchToolStripMenuItem
+            // 
+            quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
+            quảnLýSáchToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
+            // 
+            // quảnLýĐộcGiảToolStripMenuItem
+            // 
+            quảnLýĐộcGiảToolStripMenuItem.Name = "quảnLýĐộcGiảToolStripMenuItem";
+            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýĐộcGiảToolStripMenuItem.Text = "Quản lý độc giả";
+            // 
+            // quảnLýKệSáchToolStripMenuItem
+            // 
+            quảnLýKệSáchToolStripMenuItem.Name = "quảnLýKệSáchToolStripMenuItem";
+            quảnLýKệSáchToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýKệSáchToolStripMenuItem.Text = "Quản lý kệ sách";
+            // 
+            // quảnLýThủThưToolStripMenuItem
+            // 
+            quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
+            quảnLýThủThưToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
+            // 
+            // thốngKêToolStripMenuItem
+            // 
+            thốngKêToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { thốngKêSốLượngSáchToolStripMenuItem, thốngKêSốLượngĐộcGiảToolStripMenuItem, thốngKêSốLượngToolStripMenuItem, thốngKêTrễHạnToolStripMenuItem });
+            thốngKêToolStripMenuItem.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
+            thốngKêToolStripMenuItem.Size = new Size(124, 27);
+            thốngKêToolStripMenuItem.Text = "📊Thống kê ";
+            // 
+            // thốngKêSốLượngSáchToolStripMenuItem
+            // 
+            thốngKêSốLượngSáchToolStripMenuItem.Name = "thốngKêSốLượngSáchToolStripMenuItem";
+            thốngKêSốLượngSáchToolStripMenuItem.Size = new Size(284, 28);
+            thốngKêSốLượngSáchToolStripMenuItem.Text = "Số lượng sách ";
+            // 
+            // thốngKêSốLượngĐộcGiảToolStripMenuItem
+            // 
+            thốngKêSốLượngĐộcGiảToolStripMenuItem.Name = "thốngKêSốLượngĐộcGiảToolStripMenuItem";
+            thốngKêSốLượngĐộcGiảToolStripMenuItem.Size = new Size(284, 28);
+            thốngKêSốLượngĐộcGiảToolStripMenuItem.Text = "Số lượng độc giả";
+            // 
+            // thốngKêSốLượngToolStripMenuItem
+            // 
+            thốngKêSốLượngToolStripMenuItem.Name = "thốngKêSốLượngToolStripMenuItem";
+            thốngKêSốLượngToolStripMenuItem.Size = new Size(284, 28);
+            thốngKêSốLượngToolStripMenuItem.Text = "Mượn, trả theo thời gian";
+            // 
+            // thốngKêTrễHạnToolStripMenuItem
+            // 
+            thốngKêTrễHạnToolStripMenuItem.Name = "thốngKêTrễHạnToolStripMenuItem";
+            thốngKêTrễHạnToolStripMenuItem.Size = new Size(284, 28);
+            thốngKêTrễHạnToolStripMenuItem.Text = "Trễ hạn ";
+            // 
+            // báoCáoToolStripMenuItem
+            // 
+            báoCáoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem, sốLượngSáchMượnQuáHạnToolStripMenuItem, sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem, báoCáoTổngHợpToolStripMenuItem });
+            báoCáoToolStripMenuItem.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
+            báoCáoToolStripMenuItem.Size = new Size(114, 27);
+            báoCáoToolStripMenuItem.Text = "\U0001f9feBáo cáo ";
+            // 
+            // báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem
+            // 
+            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Name = "báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem";
+            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Size = new Size(427, 28);
+            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Text = "Số lượng sách được mượn theo ngày";
+            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Click += báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem_Click;
+            // 
+            // sốLượngSáchMượnQuáHạnToolStripMenuItem
+            // 
+            sốLượngSáchMượnQuáHạnToolStripMenuItem.Name = "sốLượngSáchMượnQuáHạnToolStripMenuItem";
+            sốLượngSáchMượnQuáHạnToolStripMenuItem.Size = new Size(427, 28);
+            sốLượngSáchMượnQuáHạnToolStripMenuItem.Text = "Số lượng sách mượn quá hạn";
+            // 
+            // sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem
+            // 
+            sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem.Name = "sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem";
+            sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem.Size = new Size(427, 28);
+            sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem.Text = "Số lượng độc giả đã mượn sách theo ngày ";
+            // 
+            // báoCáoTổngHợpToolStripMenuItem
+            // 
+            báoCáoTổngHợpToolStripMenuItem.Name = "báoCáoTổngHợpToolStripMenuItem";
+            báoCáoTổngHợpToolStripMenuItem.Size = new Size(427, 28);
+            báoCáoTổngHợpToolStripMenuItem.Text = "Báo cáo tổng hợp ";
             // 
             // internalAssemblyDetails1
             // 
@@ -72,119 +197,36 @@
             internalAssemblyDetails1.Size = new Size(8, 8);
             internalAssemblyDetails1.TabIndex = 2;
             // 
-            // hệThốngToolStripMenuItem
+            // StatusStripUser
             // 
-            hệThốngToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2 });
-            hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            hệThốngToolStripMenuItem.Size = new Size(85, 24);
-            hệThốngToolStripMenuItem.Text = "Hệ thống";
+            StatusStripUser.Font = new Font("Segoe UI", 9F);
+            StatusStripUser.ImageScalingSize = new Size(20, 20);
+            StatusStripUser.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            StatusStripUser.Location = new Point(0, 424);
+            StatusStripUser.Name = "StatusStripUser";
+            StatusStripUser.ProgressBars = null;
+            StatusStripUser.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+            StatusStripUser.Size = new Size(800, 26);
+            StatusStripUser.TabIndex = 3;
+            StatusStripUser.Text = "User: ";
+            StatusStripUser.ItemClicked += kryptonStatusStrip1_ItemClicked;
             // 
-            // toolStripMenuItem1
+            // toolStripStatusLabel1
             // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(224, 26);
-            toolStripMenuItem1.Text = "Đăng nhập";
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(45, 20);
+            toolStripStatusLabel1.Text = "User: ";
+            toolStripStatusLabel1.Click += toolStripStatusLabel1_Click;
             // 
-            // toolStripMenuItem2
+            // kryptonLabel1
             // 
-            toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(224, 26);
-            toolStripMenuItem2.Text = "Đăng xuất ";
-            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
-            // 
-            // danhMụcToolStripMenuItem
-            // 
-            danhMụcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýSáchToolStripMenuItem, quảnLýĐộcGiảToolStripMenuItem, quảnLýKệSáchToolStripMenuItem, quảnLýThủThưToolStripMenuItem });
-            danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            danhMụcToolStripMenuItem.Size = new Size(90, 24);
-            danhMụcToolStripMenuItem.Text = "Danh mục";
-            // 
-            // thốngKêToolStripMenuItem
-            // 
-            thốngKêToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { thốngKêSốLượngSáchToolStripMenuItem, thốngKêSốLượngĐộcGiảToolStripMenuItem, thốngKêSốLượngToolStripMenuItem, thốngKêTrễHạnToolStripMenuItem });
-            thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            thốngKêToolStripMenuItem.Size = new Size(88, 24);
-            thốngKêToolStripMenuItem.Text = "Thống kê ";
-            // 
-            // báoCáoToolStripMenuItem
-            // 
-            báoCáoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem, sốLượngSáchMượnQuáHạnToolStripMenuItem, sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem, báoCáoTổngHợpToolStripMenuItem });
-            báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            báoCáoToolStripMenuItem.Size = new Size(81, 24);
-            báoCáoToolStripMenuItem.Text = "Báo cáo ";
-            // 
-            // quảnLýSáchToolStripMenuItem
-            // 
-            quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            quảnLýSáchToolStripMenuItem.Size = new Size(224, 26);
-            quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
-            // 
-            // quảnLýĐộcGiảToolStripMenuItem
-            // 
-            quảnLýĐộcGiảToolStripMenuItem.Name = "quảnLýĐộcGiảToolStripMenuItem";
-            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(224, 26);
-            quảnLýĐộcGiảToolStripMenuItem.Text = "Quản lý độc giả";
-            // 
-            // quảnLýKệSáchToolStripMenuItem
-            // 
-            quảnLýKệSáchToolStripMenuItem.Name = "quảnLýKệSáchToolStripMenuItem";
-            quảnLýKệSáchToolStripMenuItem.Size = new Size(224, 26);
-            quảnLýKệSáchToolStripMenuItem.Text = "Quản lý kệ sách";
-            // 
-            // quảnLýThủThưToolStripMenuItem
-            // 
-            quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
-            quảnLýThủThưToolStripMenuItem.Size = new Size(224, 26);
-            quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
-            // 
-            // thốngKêSốLượngSáchToolStripMenuItem
-            // 
-            thốngKêSốLượngSáchToolStripMenuItem.Name = "thốngKêSốLượngSáchToolStripMenuItem";
-            thốngKêSốLượngSáchToolStripMenuItem.Size = new Size(253, 26);
-            thốngKêSốLượngSáchToolStripMenuItem.Text = "Số lượng sách ";
-            // 
-            // thốngKêSốLượngĐộcGiảToolStripMenuItem
-            // 
-            thốngKêSốLượngĐộcGiảToolStripMenuItem.Name = "thốngKêSốLượngĐộcGiảToolStripMenuItem";
-            thốngKêSốLượngĐộcGiảToolStripMenuItem.Size = new Size(253, 26);
-            thốngKêSốLượngĐộcGiảToolStripMenuItem.Text = "Số lượng độc giả";
-            // 
-            // thốngKêSốLượngToolStripMenuItem
-            // 
-            thốngKêSốLượngToolStripMenuItem.Name = "thốngKêSốLượngToolStripMenuItem";
-            thốngKêSốLượngToolStripMenuItem.Size = new Size(253, 26);
-            thốngKêSốLượngToolStripMenuItem.Text = "Mượn, trả theo thời gian";
-            // 
-            // thốngKêTrễHạnToolStripMenuItem
-            // 
-            thốngKêTrễHạnToolStripMenuItem.Name = "thốngKêTrễHạnToolStripMenuItem";
-            thốngKêTrễHạnToolStripMenuItem.Size = new Size(253, 26);
-            thốngKêTrễHạnToolStripMenuItem.Text = "Trễ hạn ";
-            // 
-            // báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem
-            // 
-            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Name = "báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem";
-            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Size = new Size(377, 26);
-            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Text = "Số lượng sách được mượn theo ngày";
-            báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem.Click += báoCáoSốLượngSáchĐượcMượnTheoNgàyToolStripMenuItem_Click;
-            // 
-            // sốLượngSáchMượnQuáHạnToolStripMenuItem
-            // 
-            sốLượngSáchMượnQuáHạnToolStripMenuItem.Name = "sốLượngSáchMượnQuáHạnToolStripMenuItem";
-            sốLượngSáchMượnQuáHạnToolStripMenuItem.Size = new Size(377, 26);
-            sốLượngSáchMượnQuáHạnToolStripMenuItem.Text = "Số lượng sách mượn quá hạn";
-            // 
-            // sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem
-            // 
-            sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem.Name = "sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem";
-            sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem.Size = new Size(377, 26);
-            sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem.Text = "Số lượng độc giả đã mượn sách theo ngày ";
-            // 
-            // báoCáoTổngHợpToolStripMenuItem
-            // 
-            báoCáoTổngHợpToolStripMenuItem.Name = "báoCáoTổngHợpToolStripMenuItem";
-            báoCáoTổngHợpToolStripMenuItem.Size = new Size(377, 26);
-            báoCáoTổngHợpToolStripMenuItem.Text = "Báo cáo tổng hợp ";
+            kryptonLabel1.Location = new Point(174, 140);
+            kryptonLabel1.Name = "kryptonLabel1";
+            kryptonLabel1.Size = new Size(450, 50);
+            kryptonLabel1.StateCommon.ShortText.Color1 = Color.DarkSlateBlue;
+            kryptonLabel1.StateCommon.ShortText.Font = new Font("Mongolian Baiti", 22.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            kryptonLabel1.TabIndex = 4;
+            kryptonLabel1.Values.Text = "Ứng dụng quản lý thư viên";
             // 
             // FormTrangChu
             // 
@@ -193,13 +235,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
+            Controls.Add(kryptonLabel1);
+            Controls.Add(StatusStripUser);
             Controls.Add(internalAssemblyDetails1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "FormTrangChu";
             Text = "FormTrangChu";
+            WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            StatusStripUser.ResumeLayout(false);
+            StatusStripUser.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -226,5 +273,8 @@
         private ToolStripMenuItem sốLượngSáchMượnQuáHạnToolStripMenuItem;
         private ToolStripMenuItem sốLượngĐộcGiảĐãMượnSáchTheoNgàyToolStripMenuItem;
         private ToolStripMenuItem báoCáoTổngHợpToolStripMenuItem;
+        private Krypton.Toolkit.KryptonStatusStrip StatusStripUser;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }

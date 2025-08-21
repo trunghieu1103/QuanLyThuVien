@@ -32,7 +32,8 @@
             }
             kryptonButton1.Text = "Đang đăng nhập ...";
             await Task.Delay(500); // Giả lập thời gian đăng nhập
-            FormTrangChu formTrangChu = new FormTrangChu();
+            string username = txtUsername.Text.Trim();
+            FormTrangChu formTrangChu = new FormTrangChu(username);
             formTrangChu.ShowDialog();
             this.Hide(); // Ẩn form đăng nhập sau khi đăng nhập thành công
         }
