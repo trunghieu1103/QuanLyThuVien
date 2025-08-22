@@ -27,11 +27,12 @@ namespace QuanLyThuVien
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-
-
-            FormTrangChu formTrangChu = new FormTrangChu(textBox1.Text);
-            formTrangChu.Show();
-            this.Close(); // Đóng form quản lý sách sau khi mở form Trang Chủ
+            
+                FormTrangChu formTrangChu = new FormTrangChu(textBox1.Text);
+                formTrangChu.Show();
+                this.Close(); // Đóng form quản lý sách sau khi mở form Trang Chủ
+            
+            
         }
 
         

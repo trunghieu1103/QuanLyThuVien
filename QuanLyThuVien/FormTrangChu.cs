@@ -15,7 +15,7 @@ namespace QuanLyThuVien
         public FormTrangChu(string username)
         {
             InitializeComponent();
-            toolStripStatusLabel1.Text = "User: " + username; // Hiển thị tên đăng nhập trên StatusStrip
+            toolStripStatusLabel1.Text = username; // Hiển thị tên đăng nhập trên StatusStrip
 
         }
 
