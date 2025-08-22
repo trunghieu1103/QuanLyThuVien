@@ -31,8 +31,6 @@ namespace QuanLyThuVien
                 FormTrangChu formTrangChu = new FormTrangChu(textBox1.Text);
                 formTrangChu.Show();
                 this.Close(); // Đóng form quản lý sách sau khi mở form Trang Chủ
-            
-            
         }
 
         
