@@ -19,6 +19,10 @@ namespace QuanLyThuVien
 
         }
 
+        public FormTrangChu()
+        {
+        }
+
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -60,7 +64,12 @@ namespace QuanLyThuVien
 
         private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormQuanLySach formQuanLySach = new FormQuanLySach();
+            
+        }
+
+        private void quảnLýSáchToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FormQuanLySach formQuanLySach = new FormQuanLySach(toolStripStatusLabel1.Text);
             formQuanLySach.Show();
             this.Close();
         }

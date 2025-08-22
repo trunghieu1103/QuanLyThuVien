@@ -102,25 +102,26 @@
             // quảnLýSáchToolStripMenuItem
             // 
             quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            quảnLýSáchToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýSáchToolStripMenuItem.Size = new Size(224, 26);
             quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
+            quảnLýSáchToolStripMenuItem.Click += quảnLýSáchToolStripMenuItem_Click_1;
             // 
             // quảnLýĐộcGiảToolStripMenuItem
             // 
             quảnLýĐộcGiảToolStripMenuItem.Name = "quảnLýĐộcGiảToolStripMenuItem";
-            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(224, 26);
             quảnLýĐộcGiảToolStripMenuItem.Text = "Quản lý độc giả";
             // 
             // quảnLýKệSáchToolStripMenuItem
             // 
             quảnLýKệSáchToolStripMenuItem.Name = "quảnLýKệSáchToolStripMenuItem";
-            quảnLýKệSáchToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýKệSáchToolStripMenuItem.Size = new Size(224, 26);
             quảnLýKệSáchToolStripMenuItem.Text = "Quản lý kệ sách";
             // 
             // quảnLýThủThưToolStripMenuItem
             // 
             quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
-            quảnLýThủThưToolStripMenuItem.Size = new Size(219, 28);
+            quảnLýThủThưToolStripMenuItem.Size = new Size(224, 26);
             quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
             // 
             // thốngKêToolStripMenuItem
