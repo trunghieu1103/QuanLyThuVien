@@ -222,11 +222,11 @@
             // 
             kryptonLabel1.Location = new Point(174, 140);
             kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(450, 50);
+            kryptonLabel1.Size = new Size(454, 50);
             kryptonLabel1.StateCommon.ShortText.Color1 = Color.DarkSlateBlue;
             kryptonLabel1.StateCommon.ShortText.Font = new Font("Mongolian Baiti", 22.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             kryptonLabel1.TabIndex = 4;
-            kryptonLabel1.Values.Text = "Ứng dụng quản lý thư viên";
+            kryptonLabel1.Values.Text = "Ứng dụng quản lý thư viện\r\n";
             // 
             // FormTrangChu
             // 
