@@ -27,10 +27,14 @@ namespace QuanLyThuVien
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-            
+
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
                 FormTrangChu formTrangChu = new FormTrangChu(textBox1.Text);
                 formTrangChu.Show();
                 this.Close(); // Đóng form quản lý sách sau khi mở form Trang Chủ
+            }
         }
 
         
