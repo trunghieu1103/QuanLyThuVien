@@ -35,6 +35,7 @@
             string username = txtUsername.Text.Trim();
             FormTrangChu formTrangChu = new FormTrangChu(username);
             FormQuanLySach formQuanLySach = new FormQuanLySach(username);
+            FormQuanLyKeSach formQuanLyKeSach = new FormQuanLyKeSach(username);
             formTrangChu.ShowDialog();
             this.Hide(); // Ẩn form đăng nhập sau khi đăng nhập thành công
         }

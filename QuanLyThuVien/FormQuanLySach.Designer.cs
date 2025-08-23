@@ -294,7 +294,7 @@
             kryptonLabel11.Location = new Point(346, 29);
             kryptonLabel11.Name = "kryptonLabel11";
             kryptonLabel11.Size = new Size(245, 44);
-            kryptonLabel11.StateCommon.ShortText.Color1 = Color.FromArgb(192, 64, 0);
+            kryptonLabel11.StateCommon.ShortText.Color1 = Color.DarkSlateBlue;
             kryptonLabel11.StateCommon.ShortText.Color2 = Color.Red;
             kryptonLabel11.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             kryptonLabel11.StateCommon.ShortText.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -316,6 +316,7 @@
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(112, 31);
             btnThem.StateCommon.Back.Color1 = Color.MediumSeaGreen;
+            btnThem.StateCommon.Border.Rounding = 10F;
             btnThem.StateCommon.Content.ShortText.Color1 = Color.White;
             btnThem.StateCommon.Content.ShortText.Font = new Font("Georgia", 10.2F, FontStyle.Italic);
             btnThem.TabIndex = 23;
@@ -328,6 +329,7 @@
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(112, 31);
             btnXoa.StateCommon.Back.Color1 = Color.IndianRed;
+            btnXoa.StateCommon.Border.Rounding = 10F;
             btnXoa.StateCommon.Content.ShortText.Color1 = Color.White;
             btnXoa.StateCommon.Content.ShortText.Font = new Font("Georgia", 10.2F, FontStyle.Italic);
             btnXoa.TabIndex = 24;
@@ -340,6 +342,7 @@
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(112, 31);
             btnSua.StateCommon.Back.Color1 = Color.Goldenrod;
+            btnSua.StateCommon.Border.Rounding = 10F;
             btnSua.StateCommon.Content.ShortText.Color1 = Color.White;
             btnSua.StateCommon.Content.ShortText.Font = new Font("Georgia", 10.2F, FontStyle.Italic);
             btnSua.TabIndex = 25;
@@ -354,6 +357,7 @@
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.Size = new Size(112, 31);
             btnTimKiem.StateCommon.Back.Color1 = Color.SteelBlue;
+            btnTimKiem.StateCommon.Border.Rounding = 10F;
             btnTimKiem.StateCommon.Content.ShortText.Color1 = Color.White;
             btnTimKiem.StateCommon.Content.ShortText.Font = new Font("Georgia", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
             btnTimKiem.TabIndex = 26;
@@ -387,6 +391,7 @@
             btnThoat.Name = "btnThoat";
             btnThoat.Size = new Size(112, 31);
             btnThoat.StateCommon.Back.Color1 = Color.SlateGray;
+            btnThoat.StateCommon.Border.Rounding = 10F;
             btnThoat.StateCommon.Content.ShortText.Color1 = Color.White;
             btnThoat.StateCommon.Content.ShortText.Font = new Font("Georgia", 10.2F, FontStyle.Italic);
             btnThoat.TabIndex = 29;

@@ -15,8 +15,9 @@ namespace QuanLyThuVien
         public FormTrangChu(string username)
         {
             InitializeComponent();
-            toolStripStatusLabel1.Text = username; // Hiển thị tên đăng nhập trên StatusStrip
-
+            
+            toolStripStatusLabel1.Text = username;// Hiển thị tên đăng nhập trên StatusStrip
+            toolStripMenuItem1.Enabled = false; // Vô hiệu hóa menu "Đăng xuất" trong Trang Chủ
         }
 
         public FormTrangChu()
@@ -64,7 +65,7 @@ namespace QuanLyThuVien
 
         private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void quảnLýSáchToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -72,6 +73,18 @@ namespace QuanLyThuVien
             FormQuanLySach formQuanLySach = new FormQuanLySach(toolStripStatusLabel1.Text);
             formQuanLySach.Show();
             this.Close();
+        }
+
+        private void quảnLýKệSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQuanLyKeSach formQuanLyKeSach = new FormQuanLyKeSach(toolStripStatusLabel1.Text);
+            formQuanLyKeSach.Show();
+            this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Kệ Sách
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
