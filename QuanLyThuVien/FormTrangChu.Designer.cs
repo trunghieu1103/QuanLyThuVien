@@ -80,7 +80,7 @@
             // 
             toolStripMenuItem1.Font = new Font("Segoe UI Semilight", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(224, 26);
+            toolStripMenuItem1.Size = new Size(163, 26);
             toolStripMenuItem1.Text = "Đăng nhập";
             toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
@@ -88,7 +88,7 @@
             // 
             toolStripMenuItem2.Font = new Font("Segoe UI Semilight", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(224, 26);
+            toolStripMenuItem2.Size = new Size(163, 26);
             toolStripMenuItem2.Text = "Đăng xuất ";
             toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
@@ -125,6 +125,7 @@
             quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
             quảnLýThủThưToolStripMenuItem.Size = new Size(224, 26);
             quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
+            quảnLýThủThưToolStripMenuItem.Click += quảnLýThủThưToolStripMenuItem_Click;
             // 
             // thốngKêToolStripMenuItem
             // 
