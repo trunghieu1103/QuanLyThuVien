@@ -52,6 +52,8 @@
             StatusStripUser = new Krypton.Toolkit.KryptonStatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            quảnLýTácGiảToolStripMenuItem = new ToolStripMenuItem();
+            quảnLýPhiếuMượnToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             StatusStripUser.SuspendLayout();
             SuspendLayout();
@@ -94,7 +96,7 @@
             // 
             // danhMụcToolStripMenuItem
             // 
-            danhMụcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýSáchToolStripMenuItem, quảnLýĐộcGiảToolStripMenuItem, quảnLýKệSáchToolStripMenuItem, quảnLýThủThưToolStripMenuItem });
+            danhMụcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýSáchToolStripMenuItem, quảnLýĐộcGiảToolStripMenuItem, quảnLýKệSáchToolStripMenuItem, quảnLýThủThưToolStripMenuItem, quảnLýTácGiảToolStripMenuItem, quảnLýPhiếuMượnToolStripMenuItem });
             danhMụcToolStripMenuItem.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
             danhMụcToolStripMenuItem.Size = new Size(128, 27);
@@ -103,27 +105,27 @@
             // quảnLýSáchToolStripMenuItem
             // 
             quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            quảnLýSáchToolStripMenuItem.Size = new Size(224, 26);
+            quảnLýSáchToolStripMenuItem.Size = new Size(226, 26);
             quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
             quảnLýSáchToolStripMenuItem.Click += quảnLýSáchToolStripMenuItem_Click_1;
             // 
             // quảnLýĐộcGiảToolStripMenuItem
             // 
             quảnLýĐộcGiảToolStripMenuItem.Name = "quảnLýĐộcGiảToolStripMenuItem";
-            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(224, 26);
+            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(226, 26);
             quảnLýĐộcGiảToolStripMenuItem.Text = "Quản lý độc giả";
             // 
             // quảnLýKệSáchToolStripMenuItem
             // 
             quảnLýKệSáchToolStripMenuItem.Name = "quảnLýKệSáchToolStripMenuItem";
-            quảnLýKệSáchToolStripMenuItem.Size = new Size(224, 26);
+            quảnLýKệSáchToolStripMenuItem.Size = new Size(226, 26);
             quảnLýKệSáchToolStripMenuItem.Text = "Quản lý kệ sách";
             quảnLýKệSáchToolStripMenuItem.Click += quảnLýKệSáchToolStripMenuItem_Click;
             // 
             // quảnLýThủThưToolStripMenuItem
             // 
             quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
-            quảnLýThủThưToolStripMenuItem.Size = new Size(224, 26);
+            quảnLýThủThưToolStripMenuItem.Size = new Size(226, 26);
             quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
             quảnLýThủThưToolStripMenuItem.Click += quảnLýThủThưToolStripMenuItem_Click;
             // 
@@ -232,6 +234,18 @@
             kryptonLabel1.TabIndex = 4;
             kryptonLabel1.Values.Text = "Ứng dụng quản lý thư viện\r\n";
             // 
+            // quảnLýTácGiảToolStripMenuItem
+            // 
+            quảnLýTácGiảToolStripMenuItem.Name = "quảnLýTácGiảToolStripMenuItem";
+            quảnLýTácGiảToolStripMenuItem.Size = new Size(226, 26);
+            quảnLýTácGiảToolStripMenuItem.Text = "Quản lý tác giả";
+            // 
+            // quảnLýPhiếuMượnToolStripMenuItem
+            // 
+            quảnLýPhiếuMượnToolStripMenuItem.Name = "quảnLýPhiếuMượnToolStripMenuItem";
+            quảnLýPhiếuMượnToolStripMenuItem.Size = new Size(226, 26);
+            quảnLýPhiếuMượnToolStripMenuItem.Text = "Quản lý phiếu mượn";
+            // 
             // FormTrangChu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -280,5 +294,7 @@
         private Krypton.Toolkit.KryptonStatusStrip StatusStripUser;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private ToolStripMenuItem quảnLýTácGiảToolStripMenuItem;
+        private ToolStripMenuItem quảnLýPhiếuMượnToolStripMenuItem;
     }
 }
