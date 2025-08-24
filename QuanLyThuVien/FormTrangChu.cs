@@ -93,5 +93,12 @@ namespace QuanLyThuVien
             formQuanLythuThu.Show();
             this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Thủ Thư
         }
+
+        private void quảnLýTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQuanLyTacGia formQuanLyTacGia = new FormQuanLyTacGia(toolStripStatusLabel1.Text);
+            formQuanLyTacGia.Show();
+            this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Tác Giả
+        }
     }
 }

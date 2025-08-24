@@ -37,6 +37,7 @@
             FormQuanLySach formQuanLySach = new FormQuanLySach(username);
             FormQuanLyKeSach formQuanLyKeSach = new FormQuanLyKeSach(username);
             FormQuanLythuThu formQuanLythuThu = new FormQuanLythuThu(username);
+            FormQuanLyTacGia formQuanLyTacGia = new FormQuanLyTacGia(username);
             formTrangChu.ShowDialog();
             this.Hide(); // Ẩn form đăng nhập sau khi đăng nhập thành công
         }

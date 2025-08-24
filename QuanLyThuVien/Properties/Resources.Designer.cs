@@ -59,5 +59,35 @@ namespace QuanLyThuVien.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Đại_học_Bách_Khoa_Hà_Nội_svg {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Đại_học_Bách_Khoa_Hà_Nội.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_08_24_211613 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-08-24 211613", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thu_vien_Ta_Quang_Buu_Bach_Khoa {
+            get {
+                object obj = ResourceManager.GetObject("Thu-vien-Ta-Quang-Buu-Bach-Khoa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

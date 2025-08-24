@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTrangChu));
             menuStrip1 = new MenuStrip();
             hệThốngToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
@@ -38,6 +37,8 @@
             quảnLýĐộcGiảToolStripMenuItem = new ToolStripMenuItem();
             quảnLýKệSáchToolStripMenuItem = new ToolStripMenuItem();
             quảnLýThủThưToolStripMenuItem = new ToolStripMenuItem();
+            quảnLýTácGiảToolStripMenuItem = new ToolStripMenuItem();
+            quảnLýPhiếuMượnToolStripMenuItem = new ToolStripMenuItem();
             thốngKêToolStripMenuItem = new ToolStripMenuItem();
             thốngKêSốLượngSáchToolStripMenuItem = new ToolStripMenuItem();
             thốngKêSốLượngĐộcGiảToolStripMenuItem = new ToolStripMenuItem();
@@ -52,10 +53,12 @@
             StatusStripUser = new Krypton.Toolkit.KryptonStatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            quảnLýTácGiảToolStripMenuItem = new ToolStripMenuItem();
-            quảnLýPhiếuMượnToolStripMenuItem = new ToolStripMenuItem();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
             StatusStripUser.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -105,29 +108,42 @@
             // quảnLýSáchToolStripMenuItem
             // 
             quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            quảnLýSáchToolStripMenuItem.Size = new Size(226, 26);
+            quảnLýSáchToolStripMenuItem.Size = new Size(255, 28);
             quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
             quảnLýSáchToolStripMenuItem.Click += quảnLýSáchToolStripMenuItem_Click_1;
             // 
             // quảnLýĐộcGiảToolStripMenuItem
             // 
             quảnLýĐộcGiảToolStripMenuItem.Name = "quảnLýĐộcGiảToolStripMenuItem";
-            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(226, 26);
+            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(255, 28);
             quảnLýĐộcGiảToolStripMenuItem.Text = "Quản lý độc giả";
             // 
             // quảnLýKệSáchToolStripMenuItem
             // 
             quảnLýKệSáchToolStripMenuItem.Name = "quảnLýKệSáchToolStripMenuItem";
-            quảnLýKệSáchToolStripMenuItem.Size = new Size(226, 26);
+            quảnLýKệSáchToolStripMenuItem.Size = new Size(255, 28);
             quảnLýKệSáchToolStripMenuItem.Text = "Quản lý kệ sách";
             quảnLýKệSáchToolStripMenuItem.Click += quảnLýKệSáchToolStripMenuItem_Click;
             // 
             // quảnLýThủThưToolStripMenuItem
             // 
             quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
-            quảnLýThủThưToolStripMenuItem.Size = new Size(226, 26);
+            quảnLýThủThưToolStripMenuItem.Size = new Size(255, 28);
             quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
             quảnLýThủThưToolStripMenuItem.Click += quảnLýThủThưToolStripMenuItem_Click;
+            // 
+            // quảnLýTácGiảToolStripMenuItem
+            // 
+            quảnLýTácGiảToolStripMenuItem.Name = "quảnLýTácGiảToolStripMenuItem";
+            quảnLýTácGiảToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýTácGiảToolStripMenuItem.Text = "Quản lý tác giả";
+            quảnLýTácGiảToolStripMenuItem.Click += quảnLýTácGiảToolStripMenuItem_Click;
+            // 
+            // quảnLýPhiếuMượnToolStripMenuItem
+            // 
+            quảnLýPhiếuMượnToolStripMenuItem.Name = "quảnLýPhiếuMượnToolStripMenuItem";
+            quảnLýPhiếuMượnToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýPhiếuMượnToolStripMenuItem.Text = "Quản lý phiếu mượn";
             // 
             // thốngKêToolStripMenuItem
             // 
@@ -228,43 +244,55 @@
             // 
             kryptonLabel1.Location = new Point(174, 140);
             kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(454, 50);
+            kryptonLabel1.Size = new Size(6, 2);
             kryptonLabel1.StateCommon.ShortText.Color1 = Color.DarkSlateBlue;
             kryptonLabel1.StateCommon.ShortText.Font = new Font("Mongolian Baiti", 22.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             kryptonLabel1.TabIndex = 4;
-            kryptonLabel1.Values.Text = "Ứng dụng quản lý thư viện\r\n";
+            kryptonLabel1.Values.Text = "";
             // 
-            // quảnLýTácGiảToolStripMenuItem
+            // panel1
             // 
-            quảnLýTácGiảToolStripMenuItem.Name = "quảnLýTácGiảToolStripMenuItem";
-            quảnLýTácGiảToolStripMenuItem.Size = new Size(226, 26);
-            quảnLýTácGiảToolStripMenuItem.Text = "Quản lý tác giả";
+            panel1.BackgroundImage = Properties.Resources.Thu_vien_Ta_Quang_Buu_Bach_Khoa;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 31);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 393);
+            panel1.TabIndex = 6;
             // 
-            // quảnLýPhiếuMượnToolStripMenuItem
+            // pictureBox1
             // 
-            quảnLýPhiếuMượnToolStripMenuItem.Name = "quảnLýPhiếuMượnToolStripMenuItem";
-            quảnLýPhiếuMượnToolStripMenuItem.Size = new Size(226, 26);
-            quảnLýPhiếuMượnToolStripMenuItem.Text = "Quản lý phiếu mượn";
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.BackgroundImage = Properties.Resources.Logo_Đại_học_Bách_Khoa_Hà_Nội_svg;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(691, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(109, 165);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // FormTrangChu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Zoom;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(kryptonLabel1);
             Controls.Add(StatusStripUser);
             Controls.Add(internalAssemblyDetails1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "FormTrangChu";
-            Text = "FormTrangChu";
+            Text = "Trang chủ";
             WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             StatusStripUser.ResumeLayout(false);
             StatusStripUser.PerformLayout();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,5 +324,7 @@
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ToolStripMenuItem quảnLýTácGiảToolStripMenuItem;
         private ToolStripMenuItem quảnLýPhiếuMượnToolStripMenuItem;
+        private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }
