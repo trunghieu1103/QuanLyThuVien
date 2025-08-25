@@ -55,6 +55,7 @@
             kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            quảnLýChiTiếtPhiếuMượnToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             StatusStripUser.SuspendLayout();
             panel1.SuspendLayout();
@@ -100,7 +101,7 @@
             // 
             // danhMụcToolStripMenuItem
             // 
-            danhMụcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýSáchToolStripMenuItem, quảnLýĐộcGiảToolStripMenuItem, quảnLýKệSáchToolStripMenuItem, quảnLýThủThưToolStripMenuItem, quảnLýTácGiảToolStripMenuItem, quảnLýPhiếuMượnToolStripMenuItem });
+            danhMụcToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quảnLýSáchToolStripMenuItem, quảnLýĐộcGiảToolStripMenuItem, quảnLýKệSáchToolStripMenuItem, quảnLýThủThưToolStripMenuItem, quảnLýTácGiảToolStripMenuItem, quảnLýPhiếuMượnToolStripMenuItem, quảnLýChiTiếtPhiếuMượnToolStripMenuItem });
             danhMụcToolStripMenuItem.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
             danhMụcToolStripMenuItem.Size = new Size(128, 27);
@@ -109,41 +110,42 @@
             // quảnLýSáchToolStripMenuItem
             // 
             quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            quảnLýSáchToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýSáchToolStripMenuItem.Size = new Size(275, 26);
             quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
             quảnLýSáchToolStripMenuItem.Click += quảnLýSáchToolStripMenuItem_Click_1;
             // 
             // quảnLýĐộcGiảToolStripMenuItem
             // 
             quảnLýĐộcGiảToolStripMenuItem.Name = "quảnLýĐộcGiảToolStripMenuItem";
-            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýĐộcGiảToolStripMenuItem.Size = new Size(275, 26);
             quảnLýĐộcGiảToolStripMenuItem.Text = "Quản lý độc giả";
+            quảnLýĐộcGiảToolStripMenuItem.Click += quảnLýĐộcGiảToolStripMenuItem_Click;
             // 
             // quảnLýKệSáchToolStripMenuItem
             // 
             quảnLýKệSáchToolStripMenuItem.Name = "quảnLýKệSáchToolStripMenuItem";
-            quảnLýKệSáchToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýKệSáchToolStripMenuItem.Size = new Size(275, 26);
             quảnLýKệSáchToolStripMenuItem.Text = "Quản lý kệ sách";
             quảnLýKệSáchToolStripMenuItem.Click += quảnLýKệSáchToolStripMenuItem_Click;
             // 
             // quảnLýThủThưToolStripMenuItem
             // 
             quảnLýThủThưToolStripMenuItem.Name = "quảnLýThủThưToolStripMenuItem";
-            quảnLýThủThưToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýThủThưToolStripMenuItem.Size = new Size(275, 26);
             quảnLýThủThưToolStripMenuItem.Text = "Quản lý thủ thư";
             quảnLýThủThưToolStripMenuItem.Click += quảnLýThủThưToolStripMenuItem_Click;
             // 
             // quảnLýTácGiảToolStripMenuItem
             // 
             quảnLýTácGiảToolStripMenuItem.Name = "quảnLýTácGiảToolStripMenuItem";
-            quảnLýTácGiảToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýTácGiảToolStripMenuItem.Size = new Size(275, 26);
             quảnLýTácGiảToolStripMenuItem.Text = "Quản lý tác giả";
             quảnLýTácGiảToolStripMenuItem.Click += quảnLýTácGiảToolStripMenuItem_Click;
             // 
             // quảnLýPhiếuMượnToolStripMenuItem
             // 
             quảnLýPhiếuMượnToolStripMenuItem.Name = "quảnLýPhiếuMượnToolStripMenuItem";
-            quảnLýPhiếuMượnToolStripMenuItem.Size = new Size(255, 28);
+            quảnLýPhiếuMượnToolStripMenuItem.Size = new Size(275, 26);
             quảnLýPhiếuMượnToolStripMenuItem.Text = "Quản lý phiếu mượn";
             quảnLýPhiếuMượnToolStripMenuItem.Click += quảnLýPhiếuMượnToolStripMenuItem_Click;
             // 
@@ -276,6 +278,13 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // quảnLýChiTiếtPhiếuMượnToolStripMenuItem
+            // 
+            quảnLýChiTiếtPhiếuMượnToolStripMenuItem.Name = "quảnLýChiTiếtPhiếuMượnToolStripMenuItem";
+            quảnLýChiTiếtPhiếuMượnToolStripMenuItem.Size = new Size(275, 26);
+            quảnLýChiTiếtPhiếuMượnToolStripMenuItem.Text = "Quản lý chi tiết phiếu mượn";
+            quảnLýChiTiếtPhiếuMượnToolStripMenuItem.Click += quảnLýChiTiếtPhiếuMượnToolStripMenuItem_Click;
+            // 
             // FormTrangChu
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
@@ -332,5 +341,6 @@
         private ToolStripMenuItem quảnLýPhiếuMượnToolStripMenuItem;
         private Panel panel1;
         private PictureBox pictureBox1;
+        private ToolStripMenuItem quảnLýChiTiếtPhiếuMượnToolStripMenuItem;
     }
 }

@@ -34,11 +34,7 @@
             await Task.Delay(500); // Giả lập thời gian đăng nhập
             string username = txtUsername.Text.Trim();
             FormTrangChu formTrangChu = new FormTrangChu(username);
-            FormQuanLySach formQuanLySach = new FormQuanLySach(username);
-            FormQuanLyKeSach formQuanLyKeSach = new FormQuanLyKeSach(username);
-            FormQuanLythuThu formQuanLythuThu = new FormQuanLythuThu(username);
-            FormQuanLyTacGia formQuanLyTacGia = new FormQuanLyTacGia(username);
-            FormQuanLyPhieuMuon formQuanLyPhieuMuon = new FormQuanLyPhieuMuon(username);
+            
             formTrangChu.ShowDialog();
             this.Hide(); // Ẩn form đăng nhập sau khi đăng nhập thành công
         }

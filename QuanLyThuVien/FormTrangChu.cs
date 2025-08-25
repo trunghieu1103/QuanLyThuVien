@@ -112,5 +112,19 @@ namespace QuanLyThuVien
         {
 
         }
+
+        private void quảnLýĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQuanLyDocGia formQuanLyDocGia = new FormQuanLyDocGia(toolStripStatusLabel1.Text);
+            formQuanLyDocGia.Show();
+            this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Độc Giả
+        }
+
+        private void quảnLýChiTiếtPhiếuMượnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCT_PhieuMuon formCT_PhieuMuon = new FormCT_PhieuMuon(toolStripStatusLabel1.Text);
+            formCT_PhieuMuon.Show();
+            this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Chi Tiết Phiếu Mượn
+        }
     }
 }

@@ -50,8 +50,11 @@
             txtBoxTimKiem = new Krypton.Toolkit.KryptonTextBox();
             kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             DataGridView1 = new Krypton.Toolkit.KryptonDataGridView();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)cbbDiaChi).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtboxMaDocGia
@@ -162,7 +165,9 @@
             kryptonLabel7.Location = new Point(322, 61);
             kryptonLabel7.Name = "kryptonLabel7";
             kryptonLabel7.Size = new Size(321, 49);
-            kryptonLabel7.StateCommon.ShortText.Color1 = Color.MidnightBlue;
+            kryptonLabel7.StateCommon.ShortText.Color1 = Color.MediumSlateBlue;
+            kryptonLabel7.StateCommon.ShortText.Color2 = Color.FromArgb(255, 192, 192);
+            kryptonLabel7.StateCommon.ShortText.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Linear;
             kryptonLabel7.StateCommon.ShortText.Font = new Font("Georgia", 22.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             kryptonLabel7.TabIndex = 12;
             kryptonLabel7.Values.Text = "Quản lý độc giả";
@@ -240,6 +245,7 @@
             btnThoat.TabIndex = 18;
             btnThoat.Values.DropDownArrowColor = Color.Empty;
             btnThoat.Values.Text = "Thoát";
+            btnThoat.Click += btnThoat_Click;
             // 
             // txtBoxTimKiem
             // 
@@ -267,12 +273,38 @@
             DataGridView1.Size = new Size(940, 188);
             DataGridView1.TabIndex = 21;
             // 
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = Color.WhiteSmoke;
+            iconPictureBox1.BackgroundImage = Properties.Resources.Logo_Đại_học_Bách_Khoa_Hà_Nội_svg;
+            iconPictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            iconPictureBox1.ForeColor = Color.Black;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconPictureBox1.IconColor = Color.Black;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 88;
+            iconPictureBox1.Location = new Point(846, 1);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(88, 133);
+            iconPictureBox1.TabIndex = 22;
+            iconPictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(907, 36);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 23;
+            // 
             // FormQuanLyDocGia
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(933, 489);
+            Controls.Add(label1);
+            Controls.Add(iconPictureBox1);
             Controls.Add(DataGridView1);
             Controls.Add(kryptonLabel9);
             Controls.Add(txtBoxTimKiem);
@@ -298,8 +330,10 @@
             ForeColor = Color.Black;
             Name = "FormQuanLyDocGia";
             Text = "FormQuanLyDocGia";
+            Load += FormQuanLyDocGia_Load;
             ((System.ComponentModel.ISupportInitialize)cbbDiaChi).EndInit();
             ((System.ComponentModel.ISupportInitialize)DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -328,5 +362,7 @@
         private Krypton.Toolkit.KryptonTextBox txtBoxTimKiem;
         private Krypton.Toolkit.KryptonLabel kryptonLabel9;
         private Krypton.Toolkit.KryptonDataGridView DataGridView1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Label label1;
     }
 }
