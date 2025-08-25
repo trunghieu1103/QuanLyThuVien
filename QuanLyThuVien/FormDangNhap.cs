@@ -38,6 +38,7 @@
             FormQuanLyKeSach formQuanLyKeSach = new FormQuanLyKeSach(username);
             FormQuanLythuThu formQuanLythuThu = new FormQuanLythuThu(username);
             FormQuanLyTacGia formQuanLyTacGia = new FormQuanLyTacGia(username);
+            FormQuanLyPhieuMuon formQuanLyPhieuMuon = new FormQuanLyPhieuMuon(username);
             formTrangChu.ShowDialog();
             this.Hide(); // Ẩn form đăng nhập sau khi đăng nhập thành công
         }
