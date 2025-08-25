@@ -31,14 +31,37 @@ git clone https://github.com/trunghieu1103/QuanLyThuVien.git
 cd QuanLyThuVien
 
 ## Cấu trúc thư viện
-QuanLyThuVien/
-├── FormDangNhap.*
-├── FormQuanLySach.*
-├── FormTrangChu.*
-├── Program.cs
-├── QuanLyThuVien.csproj
-├── Properties/
-└── README.md
+-QuanLyThuVien
+    |   FormCT_PhieuMuon.cs
+    |   FormCT_PhieuMuon.Designer.cs
+    |   FormCT_PhieuMuon.resx
+    |   FormDangNhap.cs
+    |   FormDangNhap.Designer.cs
+    |   FormDangNhap.resx
+    |   FormQuanLyDocGia.cs
+    |   FormQuanLyDocGia.Designer.cs
+    |   FormQuanLyDocGia.resx
+    |   FormQuanLyKeSach.cs
+    |   FormQuanLyKeSach.Designer.cs
+    |   FormQuanLyKeSach.resx
+    |   FormQuanLyPhieuMuon.cs
+    |   FormQuanLyPhieuMuon.Designer.cs
+    |   FormQuanLyPhieuMuon.resx
+    |   FormQuanLySach.cs
+    |   FormQuanLySach.Designer.cs
+    |   FormQuanLySach.resx
+    |   FormQuanLyTacGia.cs
+    |   FormQuanLyTacGia.Designer.cs
+    |   FormQuanLyTacGia.resx
+    |   FormQuanLythuThu.cs
+    |   FormQuanLythuThu.Designer.cs
+    |   FormQuanLythuThu.resx
+    |   FormTrangChu.cs
+    |   FormTrangChu.Designer.cs
+    |   FormTrangChu.resx
+    |   Program.cs
+    |   QuanLyThuVien.csproj
+    |   QuanLyThuVien.csproj.user
 
 ## Tác giả 
 Đoàn Trung Hiếu, Nguyễn Quang Huy, Nguyễn Đình Đăng
