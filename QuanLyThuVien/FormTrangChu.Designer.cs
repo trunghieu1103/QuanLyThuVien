@@ -68,7 +68,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { hệThốngToolStripMenuItem, danhMụcToolStripMenuItem, thốngKêToolStripMenuItem, báoCáoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 31);
+            menuStrip1.Padding = new Padding(6, 1, 0, 1);
+            menuStrip1.Size = new Size(900, 29);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -144,6 +145,7 @@
             quảnLýPhiếuMượnToolStripMenuItem.Name = "quảnLýPhiếuMượnToolStripMenuItem";
             quảnLýPhiếuMượnToolStripMenuItem.Size = new Size(255, 28);
             quảnLýPhiếuMượnToolStripMenuItem.Text = "Quản lý phiếu mượn";
+            quảnLýPhiếuMượnToolStripMenuItem.Click += quảnLýPhiếuMượnToolStripMenuItem_Click;
             // 
             // thốngKêToolStripMenuItem
             // 
@@ -213,10 +215,10 @@
             // internalAssemblyDetails1
             // 
             internalAssemblyDetails1.BackColor = Color.Transparent;
-            internalAssemblyDetails1.Location = new Point(125, 39);
+            internalAssemblyDetails1.Location = new Point(141, 45);
             internalAssemblyDetails1.Margin = new Padding(4, 5, 4, 5);
             internalAssemblyDetails1.Name = "internalAssemblyDetails1";
-            internalAssemblyDetails1.Size = new Size(8, 8);
+            internalAssemblyDetails1.Size = new Size(9, 9);
             internalAssemblyDetails1.TabIndex = 2;
             // 
             // StatusStripUser
@@ -224,11 +226,12 @@
             StatusStripUser.Font = new Font("Segoe UI", 9F);
             StatusStripUser.ImageScalingSize = new Size(20, 20);
             StatusStripUser.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            StatusStripUser.Location = new Point(0, 424);
+            StatusStripUser.Location = new Point(0, 492);
             StatusStripUser.Name = "StatusStripUser";
+            StatusStripUser.Padding = new Padding(1, 0, 15, 0);
             StatusStripUser.ProgressBars = null;
             StatusStripUser.RenderMode = ToolStripRenderMode.ManagerRenderMode;
-            StatusStripUser.Size = new Size(800, 26);
+            StatusStripUser.Size = new Size(900, 26);
             StatusStripUser.TabIndex = 3;
             StatusStripUser.Text = "User: ";
             StatusStripUser.ItemClicked += kryptonStatusStrip1_ItemClicked;
@@ -242,7 +245,7 @@
             // 
             // kryptonLabel1
             // 
-            kryptonLabel1.Location = new Point(174, 140);
+            kryptonLabel1.Location = new Point(195, 161);
             kryptonLabel1.Name = "kryptonLabel1";
             kryptonLabel1.Size = new Size(6, 2);
             kryptonLabel1.StateCommon.ShortText.Color1 = Color.DarkSlateBlue;
@@ -256,9 +259,10 @@
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 31);
+            panel1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            panel1.Location = new Point(0, 29);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 393);
+            panel1.Size = new Size(900, 463);
             panel1.TabIndex = 6;
             // 
             // pictureBox1
@@ -266,27 +270,29 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BackgroundImage = Properties.Resources.Logo_Đại_học_Bách_Khoa_Hà_Nội_svg;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(691, 0);
+            pictureBox1.Location = new Point(777, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 165);
+            pictureBox1.Size = new Size(123, 189);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // FormTrangChu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(900, 518);
             Controls.Add(panel1);
             Controls.Add(kryptonLabel1);
             Controls.Add(StatusStripUser);
             Controls.Add(internalAssemblyDetails1);
             Controls.Add(menuStrip1);
+            Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MainMenuStrip = menuStrip1;
             Name = "FormTrangChu";
-            Text = "Trang chủ";
+            Text = "Ứng dụng quản lý thư viện ";
             WindowState = FormWindowState.Maximized;
+            Load += FormTrangChu_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             StatusStripUser.ResumeLayout(false);

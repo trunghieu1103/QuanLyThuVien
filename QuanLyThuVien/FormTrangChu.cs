@@ -100,5 +100,17 @@ namespace QuanLyThuVien
             formQuanLyTacGia.Show();
             this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Tác Giả
         }
+
+        private void quảnLýPhiếuMượnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQuanLyPhieuMuon formQuanLyPhieuMuon = new FormQuanLyPhieuMuon(toolStripStatusLabel1.Text);
+            formQuanLyPhieuMuon.Show();
+            this.Close(); // Đóng form Trang Chủ sau khi mở form Quản Lý Phiếu Mượn
+        }
+
+        private void FormTrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
